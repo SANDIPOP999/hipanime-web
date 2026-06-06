@@ -1,5 +1,5 @@
 <?php 
-include __DIR__ . '/_config.php';
+include __DIR__ . '_config.php';
  ?>
 <!DOCTYPE html>
 <html lang="en">

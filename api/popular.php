@@ -1,5 +1,5 @@
 <?php 
-require __DIR__ . '/_config.php';
+require __DIR__ . '_config.php';
  
 $page = $_GET['page']; 
 if ($page == ""){

@@ -1,5 +1,5 @@
 <?php
-    require __DIR__ . '/_config.php';
+    require __DIR__ . '_config.php';
 ?>
 
 <div class="container">

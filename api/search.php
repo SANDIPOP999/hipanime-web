@@ -1,5 +1,5 @@
 <?php 
-require __DIR__ . '/_config.php';
+require __DIR__ . '_config.php';
  
 $keyword = $_GET['keyword'];
 $keyword = str_replace(' ', '%20', $keyword);
