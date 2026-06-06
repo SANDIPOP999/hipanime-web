@@ -1,7 +1,7 @@
 <div class="swiper-wrapper">
 
     <?php
-    include("_config.php");
+    include __DIR__ . '/config.php';
 
     $url = "https://hip-api-consu-api.vercel.app/meta/banners";
 

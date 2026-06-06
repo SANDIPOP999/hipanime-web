@@ -1,3 +1,7 @@
+ <?php
+ require __DIR__ . '/_config.php';
+ 
+ ?>
  <div id="episodes-content">
                                     <div class="seasons-block seasons-block-max">
                                         <div id="detail-ss-list" class="detail-seasons">

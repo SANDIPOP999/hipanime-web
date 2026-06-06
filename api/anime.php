@@ -1,5 +1,5 @@
 <?php 
-require('_config.php');
+require __DIR__ . '/_config.php';
 
 // Extract ID from the "search" query parameter
 if (isset($_GET['search'])) {

@@ -1,5 +1,6 @@
 <?php 
-require('./_config.php'); 
+require __DIR__ . '/_config.php';
+ 
 $page = $_GET['page']; 
 if ($page == ""){
     $page = 1;

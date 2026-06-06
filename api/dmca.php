@@ -1,4 +1,5 @@
-<?php include("./_config.php"); ?>
+<?php include __DIR__ . '/_config.php';
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 

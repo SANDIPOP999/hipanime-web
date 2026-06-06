@@ -1,5 +1,5 @@
 <?php 
-require_once('../_config.php');
+require_once(dirname(__DIR__) . '/_config.php');
 $id = $_GET['id'];
 
 $getAnime = file_get_contents("$ani/meta/anilist/info?id=$id");

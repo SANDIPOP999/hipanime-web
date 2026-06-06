@@ -1,5 +1,5 @@
 <?php
-include('_config.php'); // Import $ani variable
+include __DIR__ . '/config.php';// Import $ani variable
 
 // Define API URL
 $apiUrl = "$api/meta/top-airing";

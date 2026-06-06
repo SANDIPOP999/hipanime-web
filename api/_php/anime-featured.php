@@ -1,3 +1,7 @@
+<?php
+    require __DIR__ . '/_config.php';
+?>
+
 <div class="container">
     <div class="anif-blocks">
         <div class="row">
