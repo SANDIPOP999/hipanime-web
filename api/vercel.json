@@ -1,13 +1,16 @@
+cat << 'EOF' > vercel.json
 {
   "functions": {
     "api/**/*.php": {
-      "runtime": "vercel-php@0.6.0"
+      "runtime": "vercel-php@0.9.0"
     }
   },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "/api/$1"
     }
   ]
 }
+EOF
+
