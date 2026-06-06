@@ -1,0 +1,18 @@
+php_value display_errors On
+php_value mbstring.http_input auto
+php_value date.timezone Asia/Singapore
+RewriteEngine On
+# Redirect HTTP to HTTPS and remove www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+RewriteRule ^(.*)$ https://hipanime.me/$1 [L,R=301]
+# Custom routes (internal rewrites)
+RewriteRule ^watch/([^/]+)$ /streaming.php?id=$1 [L,QSA]
+RewriteRule ^anime/([^/]+)$ /anime?search=$1 [L,QSA]
+# Remove .php Extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+# Content Security Policy
+Header set Content-Security-Policy "default-src * data: 'unsafe-inline' 'unsafe-eval'; connect-src *"
+ErrorDocument 404 /errorpages/notexisted.php
